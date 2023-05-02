@@ -1,15 +1,19 @@
-# Assignment 3
-## Tree coding challenge
-For each of the questions below, make sure that you clearly describe any assumptions you make. All code should be well commented. You may not import any data structures, but you may use classes and arrays. Your code should be generic where possible. If you need additional data structures, implement them yourself. For example, Question 1.2 would benefit greatly from the existence of a linked list class.
+# Assignment 4
+## Welcome to graph
+For each of the questions below, make sure that you clearly describe any assumptions you make. All code should be well commented. Your code should be generic where possible, but we will only test with numeric and String types. You may use non-graph data structures from the standard library (eg `ArrayList`, `HashMap` etc).
 
-You may have written some of these classes and functions before but you should be able to do all of this with minimal javadoc reference.
+You may have written some of these classes and functions before but you should be able to do all of this with minimal JavaDoc reference.
+Assignment: Graph Data Structures in Java
 
-1. Design and implement a tree data structure.  Ensure the tree has a `toString()` method which produces a legible representation of the tree. You will use this data structure for the remaining questions in this assignment, so read those first. Your class should be as general as possible - this means you can use it to solve problems that are not asked below. Implement the following methods for your tree. Make sure to write detailed comments explaining any design decisions you make. For each of these functions, report the time and space complexity of your implementation.
-	1. `depth` should return the maximum depth of your tree (ie the node with the longest path back to the root). If implemented correctly, this method should be callable at any node in the tree.
-	2. `pathToRoot` should take in a node that exists in your tree and return the sequence of nodes from the root to that node. 
-	3. `siblings` should take in a node and return all other nodes which are children of said node’s parent.
-	4. `LeastCommonSubsumer`should take in two nodes and return the deepest node which is a parent to both of them.
-2. Describe/draw instances of trees. You should use as many trees as you need to demonstrate that your data structure is capable of representing any of the trees you will need to represent for the remaining questions. Demonstrate instantiating these trees in code.
-3. In a separate class, Implement a pre-order, in-order, and post-order traversal of your tree. Write a main method in this class to print the nodes in the order that they are evaluated in each of the traversals. Use the examples from question 2. Describe the traversals in detail in your writeup.
-4. Implement in-order traversal in O(1) space and O(n) time. Recall that the recursive solution is O(n) space. Describe your algorithm in detail in the writeup.
-5. Write a static method that determines whether a tree with integer values at its nodes is a sum tree or not. That is, the integer at each node in the tree should be equal to the sum of all of its children.
+1. Design and implement a graph data structure. You should be able to handle weighted nodes and edges with `String` labels. We will discuss the interface in class. Ensure the graph has a **toString()** method which produces a legible representation of the graph. You will use this data structure for the remaining questions in this assignment, so read those first. Your class should be as general as possible - this means you can use it to solve problems that are not asked below. Implement the following methods for your graph. Make sure to write detailed comments explaining any design decisions you make. For each of these functions, report the time and space complexity of your implementation.
+	**1** **isConnected** should check if the graph is connected.
+	**2** **isCyclic** should check if the graph contains any cycles.
+	**3** **maximumFlow** should return the maximum flow between two nodes in a flow network graph.  That is, if your graph were a set of pipes and edge weights represented how much water could flow through a pipe at any given moment, what is the maximum total amount of water that can be flowing into the target node at any given moment. We will try to solve this in class.
+
+2. Describe/draw instances of graphs. You should use as many graphs as you need to demonstrate that your data structure is capable of representing any of the graphs you will need to represent for the remaining questions. Demonstrate instantiating these graphs in code.
+
+3. Implement Dijkstra’s algorithm for finding the shortest path between two nodes in a weighted graph. Describe your algorithm in detail in the writeup. Read about other shortest path algorithms and explain how two of them differ from Dijkstra
+
+4. Write a static method that determines whether a graph is bipartite or not. A graph is bipartite if its vertices can be divided into two disjoint sets such that every edge connects a vertex in one set to a vertex in the other set.
+
+5. Implement the PageRank algorithm to rank the nodes in a directed graph based on their importance. The PageRank algorithm is an iterative algorithm that assigns a rank to each node in the graph, with the rank representing the probability that a random walk through the graph will end up at that node. Write a main method in this class to print the PageRank scores for each node in the graph. Use the examples from question Describe the PageRank algorithm in detail in your writeup. You will have to find sources and read about PageRank yourself. We will discuss PageRank in class on the first non-flunk day of next week.
