@@ -17,3 +17,5 @@ Assignment: Graph Data Structures in Java
 4. Write a static method that determines whether a graph is bipartite or not. A graph is bipartite if its vertices can be divided into two disjoint sets such that every edge connects a vertex in one set to a vertex in the other set.
 
 5. Implement the PageRank algorithm to rank the nodes in a directed graph based on their importance. The PageRank algorithm is an iterative algorithm that assigns a rank to each node in the graph, with the rank representing the probability that a random walk through the graph will end up at that node. Write a main method in this class to print the PageRank scores for each node in the graph. Use the examples from question Describe the PageRank algorithm in detail in your writeup. You will have to find sources and read about PageRank yourself. We will discuss PageRank in class on the first non-flunk day of next week.
+
+Add a main method somewhere in your code that will run all of your examples with informative print statements in between. Make sure the main method is well documented so the TAs and I can easily try out variations on your examples.
